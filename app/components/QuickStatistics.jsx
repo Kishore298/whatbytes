@@ -6,7 +6,7 @@ export default function QuickStatistics({ rank, percentile, correctScore }) {
     <div className="bg-white p-6 shadow rounded">
       <h2 className="text-xl font-semibold mb-4">Quick Statistics</h2>
       {/* Use flex-col on small screens and switch to flex-row on large screens */}
-      <div className="flex flex-col lg:flex-row lg:space-x-6 space-y-4 lg:space-y-0">
+      <div className="flex flex-col lg:flex-row lg:space-x-12 space-y-4 lg:space-y-0">
         {/* Rank */}
         <div className="flex items-center space-x-4">
           <div className="bg-gray-200 p-3 rounded-full">
