@@ -14,7 +14,7 @@ const geistMono = localFont({
 
 export const metadata = {
   title: "WhatBytes",
-  description: "WhatBytes-Bangalore",
+  description: "WhatBytes- A Bangalore Based Software Company",
 };
 
 export default function RootLayout({ children }) {
