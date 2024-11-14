@@ -16,14 +16,14 @@ export default function QuickStatistics({ rank, percentile, correctScore }) {
             <p className="text-2xl font-bold">{rank}</p>
             <p>Your Rank</p>
           </div>
-        </div>
+        </div> 
         {/* Percentile */}
         <div className="flex items-center space-x-4">
           <div className="bg-gray-200 p-3 rounded-full">
             <FontAwesomeIcon icon={faChartBar} className="text-blue-500" size="2x" />
           </div>
           <div>
-            <p className="text-2xl font-bold">{percentile}%</p>
+            <p className="text-2xl font-bold">{percentile}%</p>  
             <p>Your Percentile</p>
           </div>
         </div>

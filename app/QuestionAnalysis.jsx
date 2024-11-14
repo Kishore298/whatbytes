@@ -1,10 +1,13 @@
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar'; 
 import 'react-circular-progressbar/dist/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCrosshairs } from '@fortawesome/free-solid-svg-icons'; // Import the crosshairs icon
+import { faCrosshairs, faStar } from '@fortawesome/free-solid-svg-icons'; // Import star icon
 
 export default function QuestionAnalysis({ correctScore }) {
   const percentage = (correctScore / 15) * 100;
+  
+  // Calculate the number of stars to color based on percentage
+  const numYellowStars = Math.round((percentage / 100) * 5);
 
   return (
     <div className="bg-white p-6 shadow rounded">
@@ -17,10 +20,14 @@ export default function QuestionAnalysis({ correctScore }) {
           However, it still needs some improvement.
         </p>
       </div>
+      
       <div className="flex items-center space-x-4">
+        {/* Score */}
         <div className="flex-1">
-          <p className="text-lg font-semibold">{correctScore}/15</p>
+          <p className="text-2xl text-green-600 mt-10">{correctScore}/15</p>
         </div>
+        
+        {/* Circular Progress */}
         <div className="w-24 h-24 mx-auto relative">
           <CircularProgressbar
             value={percentage}
@@ -36,9 +43,20 @@ export default function QuestionAnalysis({ correctScore }) {
           </div>
         </div>
       </div>
+
+      {/* Star Rating */}
+      <div className="flex mt-4">
+        {[...Array(5)].map((_, index) => (
+          <FontAwesomeIcon
+            key={index}
+            icon={faStar}
+            size="md lg:lg"
+            color={index < numYellowStars ? 'gold' : 'gray'}
+            className="mr-1"
+          />
+        ))}
+      </div>
     </div>
   );
 }
-
-
 

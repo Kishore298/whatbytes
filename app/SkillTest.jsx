@@ -28,7 +28,7 @@ export default function SkillTest() {
   };
 
   return (
-    <div className="flex flex-col w-full lg:p-6 space-y-6">
+    <div className="flex flex-col w-full  space-y-6">
       <div className="flex flex-col md:flex-row space-y-6 md:space-y-0">
         <div className="w-full md:w-3/5 space-y-6">
           {/* Section 1 */}
@@ -103,12 +103,12 @@ export default function SkillTest() {
                 </div>
               </div>
             )}
-            <div className="flex flex-col lg:flex-row items-center lg:items-start lg:space-x-6">
-              <div className="flex items-center space-x-4">
+            <div className="flex flex-col lg:flex-row items-center lg:items-start lg:space-x-2">
+              <div className="flex items-center space-x-2">
                 <FontAwesomeIcon
                   icon={faHtml5}
                   className="text-orange-500"
-                  size="2x"
+                  size="4x"
                 />
                 <h2 className="text-sm lg:text-md md:text-xl text-black font-bold">
                   Hyper Text Markup Language
