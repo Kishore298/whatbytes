@@ -1,6 +1,6 @@
-import Navbar from "./Navbar";
-import Sidebar from "./Sidebar";
-import SkillTest from "./SkillTest";
+import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
+import SkillTest from "./pages/SkillTest";
 
 export default function Home() {
   return (

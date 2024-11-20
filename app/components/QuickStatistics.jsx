@@ -16,6 +16,7 @@ export default function QuickStatistics({ rank, percentile, correctScore }) {
             <p className="text-2xl font-bold">{rank}</p>
             <p>Your Rank</p>
           </div>
+          <div className="hidden lg:block border-l border-gray-300 h-16"></div>
         </div> 
         {/* Percentile */}
         <div className="flex items-center space-x-4">
@@ -27,6 +28,7 @@ export default function QuickStatistics({ rank, percentile, correctScore }) {
             <p>Your Percentile</p>
           </div>
         </div>
+        <div className="hidden lg:block border-l border-gray-300 h-16"></div>
         {/* Correct Answers */}
         <div className="flex items-center space-x-4">
           <div className="bg-gray-200 p-3 rounded-full">
